@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"virtualporttest\startup_stm32f446xx.o"
+"virtualporttest\main.o"
+"virtualporttest\stm32f4xx_it.o"
+"virtualporttest\stm32f4xx_hal_msp.o"
+"virtualporttest\stm32f4xx_hal_tim.o"
+"virtualporttest\stm32f4xx_hal_tim_ex.o"
+"virtualporttest\stm32f4xx_hal_uart.o"
+"virtualporttest\stm32f4xx_hal_rcc.o"
+"virtualporttest\stm32f4xx_hal_rcc_ex.o"
+"virtualporttest\stm32f4xx_hal_flash.o"
+"virtualporttest\stm32f4xx_hal_flash_ex.o"
+"virtualporttest\stm32f4xx_hal_flash_ramfunc.o"
+"virtualporttest\stm32f4xx_hal_gpio.o"
+"virtualporttest\stm32f4xx_hal_dma_ex.o"
+"virtualporttest\stm32f4xx_hal_dma.o"
+"virtualporttest\stm32f4xx_hal_pwr.o"
+"virtualporttest\stm32f4xx_hal_pwr_ex.o"
+"virtualporttest\stm32f4xx_hal_cortex.o"
+"virtualporttest\stm32f4xx_hal.o"
+"virtualporttest\stm32f4xx_hal_exti.o"
+"virtualporttest\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "VirtualPortTest\VirtualPortTest.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "VirtualPortTest.map" -o VirtualPortTest\VirtualPortTest.axf
